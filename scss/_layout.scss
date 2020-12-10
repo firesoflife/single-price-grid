@@ -1,0 +1,27 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-areas:
+    'top top '
+    'left right';
+
+  &__top {
+    grid-area: top;
+    @include flex-spacing;
+  }
+
+  &__left {
+    grid-area: left;
+    @include flex-spacing;
+  }
+  &__right {
+    grid-area: right;
+    @include flex-spacing;
+  }
+}

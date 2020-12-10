@@ -1,0 +1,22 @@
+$color-primary: #2ab2af;
+$color-tertiary: #00c1be;
+$color-secondary: hsl(71, 73%, 54%);
+$color-light: hsl(204, 43%, 93%);
+$color-dark: hsl(218, 22%, 67%);
+
+$max-width: 1440px;
+$max-width-mobile: 375px;
+
+// Helper classes
+
+.pd-small {
+  padding: 3rem;
+}
+
+@mixin flex-spacing {
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

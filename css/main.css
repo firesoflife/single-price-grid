@@ -1,0 +1,104 @@
+.pd-small {
+  padding: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  display: grid;
+  grid-template-areas: 'top top ' 'left right'; }
+  .card__top {
+    grid-area: top;
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .card__left {
+    grid-area: left;
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .card__right {
+    grid-area: right;
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5; }
+
+.card {
+  border-radius: 10px;
+  height: 47.5rem;
+  width: 65.3rem;
+  margin: auto;
+  box-shadow: 4px 4px 20px rgba(152, 166, 189, 0.7); }
+  .card__top {
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px; }
+    .card__top h1 {
+      color: #2ab2af; }
+    .card__top h2 {
+      color: #c0df34; }
+    .card__top p {
+      color: #98a6bd;
+      font-size: 1.6rem; }
+  .card__left {
+    background-color: #2ab2af;
+    color: #e5eff5;
+    border-radius: 0px 0px 0px 10px;
+    font-size: 1.6rem; }
+    .card__left p {
+      font-size: 1.6; }
+    .card__left span {
+      font-size: 5rem;
+      margin-right: 2rem; }
+    .card__left .price {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 5rem; }
+      .card__left .price span.text {
+        font-size: 1.8rem;
+        vertical-align: 1rem; }
+  .card__right {
+    background-color: #00c1be;
+    color: #e5eff5;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 0px 0px 10px 0px; }
+
+button.btn {
+  display: inline-block;
+  padding: 1.6rem;
+  width: 80%;
+  background-color: #c0df34;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: -8px 8px 10px 2px rgba(0, 0, 0, 0.2); }

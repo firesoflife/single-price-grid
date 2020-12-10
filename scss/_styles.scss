@@ -1,0 +1,65 @@
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: $color-light;
+}
+
+.card {
+  border-radius: 10px;
+  height: 47.5rem;
+  width: 65.3rem;
+  margin: auto;
+  box-shadow: 4px 4px 20px rgba($color-dark, 0.7);
+
+  &__top {
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+
+    & h1 {
+      color: $color-primary;
+    }
+
+    & h2 {
+      color: $color-secondary;
+    }
+
+    & p {
+      color: $color-dark;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__left {
+    background-color: $color-primary;
+    color: $color-light;
+    border-radius: 0px 0px 0px 10px;
+    font-size: 1.6rem;
+
+    & p {
+      font-size: 1.6;
+    }
+
+    & span {
+      font-size: 5rem;
+      margin-right: 2rem;
+    }
+
+    & .price {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 5rem;
+
+      & span.text {
+        font-size: 1.8rem;
+        vertical-align: 1rem;
+      }
+    }
+  }
+  &__right {
+    background-color: $color-tertiary;
+    color: $color-light;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 0px 0px 10px 0px;
+  }
+}
