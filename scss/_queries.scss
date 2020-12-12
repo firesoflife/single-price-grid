@@ -1,0 +1,17 @@
+@media only screen and (max-width: 680px) {
+  .card {
+    display: block;
+    border-radius: 0;
+    height: 100%;
+
+    &__top,
+    &__left,
+    &__right {
+      border-radius: 0px;
+      & > * {
+        line-height: 3rem;
+        padding: 1.7rem 0;
+      }
+    }
+  }
+}
